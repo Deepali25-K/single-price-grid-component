@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* Custom CSS */
+
+body{
+  min-height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  display: grid;
+  grid-template-rows: 1.1fr 1fr 1fr;
+  margin: 1rem;
+  box-shadow: 10px 23px 27px -17px rgba(134,169,176,1);
+  border-radius: 0.5rem;
+}
+
+section{
+  padding: 1.51rem;
+}
+
+.section-1{
+  background-color: white;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+h1{
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.section-1 h1{
+  color: hsl(179, 62%, 43%);
+}
+
+h2{
+  color: hsl(71, 73%, 54%);
+  margin: 1.2rem 0;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+p{
+  color: hsl(204, 43%, 93%);
+  font-size: 0.9rem;
+}
+
+.section-1 p{
+  color: hsl(204, 43%, 75%);
+  line-height: 1.6rem;
+
+}
+
+.section-2{
+  background-color: hsl(179, 62%, 43%);
+}
+
+.section-2 p:first-of-type{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: hsl(179, 62%, 63%);
+}
+
+span{
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+}
+
+.section-2 p{
+  font-size: 1rem;
+  margin-bottom: 0.4rem; 
+}
+
+.section-2 p:nth-last-child(3){
+    font-weight: 700;
+    color: hsl(179, 62%, 63%);
+  }
+
+button{
+  width: 100%;
+  color: white;
+  background-color: hsl(71, 73%, 54%);
+  padding: 0.7rem 0;
+  border-radius: 0.4rem;
+  border: 3px dotted hsl(71, 73%, 54%);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  box-shadow: 10px 23px 27px -15px rgba(98,133,140,1);
+}
+
+button:hover{
+  background-color: transparent;
+  border: 3px dotted hsl(71, 73%, 54%);
+  transition: 0.4s ease-in-out;
+  color: white;
+}
+
+.section-3{
+  background-color: hsla(179, 62%, 43%, 0.8);
+  border-radius: 0 0 0.2rem 0.2rem;
+}
+
+.section-3 p{
+  margin-bottom: 0.2rem;
+  color: hsl(179, 62%, 90%);
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 500px){ 
+  
+  main{
+    max-width: 40rem;
+    grid-template-rows: 1fr 1.2fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "section-1 section-1"
+      "section-2 section-3";
+  }
+  
+  section{
+    padding: 2.4rem;
+  }
+  
+  .section-1{
+    grid-area: section-1;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .section-1 h1{
+    font-size:  1.5rem;
+  }
+
+  h2{
+    font-size: 1.2rem;
+  }
+
+  .section-1 p{
+    font-size: 1rem;
+  }
+  
+  .section-2{
+    grid-area: section-2;
+    border-radius: 0 0 0 0.5rem;
+  }
+  
+  .section-3{
+    grid-area: section-3;
+    border-radius: 0 0 0.5rem 0;
+  }
+  
+  button{
+    padding: 0.9rem 0;
+    margin-top: 1.4rem;
+  }
+  
+}

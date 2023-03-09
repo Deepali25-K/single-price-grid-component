@@ -15,15 +15,15 @@ Users should be able to:
 ### Screenshot
 
 Web:
-![]()
+![](/screenshots/FM-10(2).png)
 
 Mobile:
-![]()
+![](/screenshots/FM-10(1).png)
 
 
 ### Links
 
-- Live Site URL: [Code Demo]()
+- Live Site URL: [Code Demo](https://single-price-grid-deepali.netlify.app/)
 
 ## My process
 
