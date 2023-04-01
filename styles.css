@@ -88,6 +88,10 @@ body{
   justify-content: center;
 }
 
+.hide-me{
+  display: none;
+}
+
 main{
   display: grid;
   grid-template-rows: 1.1fr 1fr 1fr;
@@ -96,7 +100,7 @@ main{
   border-radius: 0.5rem;
 }
 
-section{
+div{
   padding: 1.51rem;
 }
 
@@ -105,18 +109,18 @@ section{
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
-h1{
+h2{
   color: white;
   font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.section-1 h1{
+.section-1 h2{
   color: hsl(179, 62%, 43%);
 }
 
-h2{
+h3{
   color: hsl(71, 73%, 54%);
   margin: 1.2rem 0;
   font-weight: 700;
@@ -131,7 +135,6 @@ p{
 .section-1 p{
   color: hsl(204, 43%, 75%);
   line-height: 1.6rem;
-
 }
 
 .section-2{
@@ -159,7 +162,7 @@ span{
 .section-2 p:nth-last-child(3){
     font-weight: 700;
     color: hsl(179, 62%, 63%);
-  }
+}
 
 button{
   width: 100%;
@@ -187,7 +190,7 @@ button:hover{
   border-radius: 0 0 0.2rem 0.2rem;
 }
 
-.section-3 p{
+ul li{
   margin-bottom: 0.2rem;
   color: hsl(179, 62%, 90%);
   font-size: 0.9rem;
@@ -206,7 +209,7 @@ button:hover{
       "section-2 section-3";
   }
   
-  section{
+  div{
     padding: 2.4rem;
   }
   
@@ -215,11 +218,11 @@ button:hover{
     border-radius: 0.5rem 0.5rem 0 0;
   }
   
-  .section-1 h1{
+  .section-1 h2{
     font-size:  1.5rem;
   }
 
-  h2{
+  h3{
     font-size: 1.2rem;
   }
 
